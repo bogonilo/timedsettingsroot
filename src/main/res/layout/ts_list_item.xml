@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="@drawable/rect"
+        style="@style/MyAppTheme">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/hint_time"
+            android:id="@+id/timeS"
+            android:textColor="#ffffff"
+            android:textSize="19dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/text_rect"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp">
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="true"
+                android:background="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/TSname"
+                android:layout_alignBottom="@+id/sunday" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TStitle"
+                android:id="@+id/TSname"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentEnd="false"
+                android:layout_marginTop="5dp"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Sunday"
+                android:id="@+id/sunday"
+                android:layout_alignLeft="@+id/TSname"
+                android:layout_below="@+id/TSname"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Monday"
+                android:id="@+id/monday"
+                android:layout_toRightOf="@+id/sunday"
+                android:layout_alignBaseline="@+id/sunday"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Tuesday"
+                android:id="@+id/tuesday"
+                android:layout_toRightOf="@+id/monday"
+                android:layout_alignBaseline="@+id/monday"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Wednesday"
+                android:id="@+id/wednesday"
+                android:layout_toRightOf="@+id/tuesday"
+                android:layout_alignBaseline="@+id/tuesday"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Thursday"
+                android:id="@+id/thursday"
+                android:layout_toRightOf="@+id/wednesday"
+                android:layout_alignBaseline="@+id/wednesday"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Friday"
+                android:id="@+id/friday"
+                android:layout_toRightOf="@+id/thursday"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@+id/thursday"
+                android:textIsSelectable="false"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Saturday"
+                android:id="@+id/saturday"
+                android:layout_toRightOf="@+id/friday"
+                android:layout_toEndOf="@+id/friday"
+                android:layout_alignBaseline="@+id/friday"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@+id/TSname"
+                android:id="@+id/view"
+                android:layout_toRightOf="@+id/repeat"
+                android:layout_alignBottom="@+id/sunday" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R"
+                android:id="@+id/repeat"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/view"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enabledTS"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

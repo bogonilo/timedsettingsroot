@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timed Settings Plus (ROOT)</string>
+    <string name="Friday">V</string>
+    <string name="Monday">L</string>
+    <string name="Saturday">S</string>
+    <string name="Sunday">D</string>
+    <string name="TStitle">TSname</string>
+    <string name="Thursday">G</string>
+    <string name="Tuesday">M</string>
+    <string name="Wednesday">M</string>
+    <string name="butt_del">Cancella</string>
+    <string name="butt_save">Salva</string>
+    <string name="hint_name">Inserisci Nome</string>
+    <string name="mode">Modalità</string>
+    <string name="op1">Modalità Suoneria:</string>
+    <string name="op4">Luminosità:</string>
+    <string name="op5">Sincronizzazione:</string>
+    <string name="options_title">IMPOSTAZIONI:</string>
+    <string name="rip_sett">Ripetizione Settimanale:</string>
+    <string name="time">IMPOSTA ORA:</string>
+    <string name="time_start">Inizio:</string>
+    <string name="title_activity_activity_details_ts">Imposta TS</string>
+    <string name="title_activity_set_options">imposta_opzioni</string>
+    <string name="choose_mode">Scegli Modalità Suoneria:</string>
+    <string name="id0">Silenzioso</string>
+    <string name="id1">Vibrazione</string>
+    <string name="id2">Normale</string>
+    <string name="del_conf">Conferma:</string>
+    <string name="del_q">Cancellare TS?</string>
+    <string name="canc">Annulla</string>
+    <string name="conf">Ok</string>
+
+
+    <string-array name="ringer_mode">
+        <item>Silenzioso</item>
+        <item>Vibrazione</item>
+        <item>Normale</item>
+    </string-array>
+    <string name="Mon">LUNEDÌ</string>
+    <string name="Fri">VENERDÌ</string>
+    <string name="Sat">SABATO</string>
+    <string name="Sun">DOMENICA</string>
+    <string name="Thu">GIOVEDÌ</string>
+    <string name="Tue">MARTEDÌ</string>
+    <string name="Wed">MERCOLEDÌ</string>
+    <string name="op6">Rotazione Schermo:</string>
+    <string name="op7">Luminosità Automatica:</string>
+    <string name="op8">Connessione Dati:</string>
+    <string name="op9">Risparmio Energetico:</string>
+    <string name="enab_sett">Attiva Timed Settings Plus</string>
+    <string name="op10">Modalità Aereo:</string>
+</resources>

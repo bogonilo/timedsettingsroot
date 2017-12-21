@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/MyAppTheme"
+    android:paddingBottom="13dp">
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/TSNameLayout"
+     android:layout_marginLeft="8dp"
+     android:layout_marginRight="8dp"
+     android:layout_marginTop="8dp"
+     android:background="@drawable/edittext_rect">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/TSname"
+        android:hint="@string/hint_name"
+        android:layout_marginTop="5dp"
+        android:textSize="22dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textCapWords"
+        android:textColorHint="#c0c0c0"
+        android:textColor="#000000" />
+ </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:id="@+id/SetTime"
+        android:layout_alignParentLeft="true"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/TSNameLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_start"
+        android:id="@+id/Start"
+        android:layout_below="@+id/SetTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/timeStart"
+        android:layout_below="@+id/SetTime"
+        android:layout_toRightOf="@+id/Start"
+        android:layout_toEndOf="@+id/Start"
+        android:layout_alignBaseline="@+id/Start"
+        android:layout_marginLeft="13dp"
+        android:hint="@string/hint_time"
+        android:textColorHint="#35b6e5"
+        android:textColor="#35b6e5"
+        android:clickable="true"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:layout_marginTop="23dp"
+        android:elevation="6dp"
+        android:background="@drawable/edit_rect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Start"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="33dp"
+        android:id="@+id/relativeLayout"
+        android:weightSum="7"
+        android:elevation="2dp">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/S"
+        android:textOff="@string/Sunday"
+        android:textOn="@string/Sunday"
+        android:layout_weight="1" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/M"
+        android:textOff="@string/Monday"
+        android:textOn="@string/Monday"
+        android:layout_weight="1"
+        android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/T"
+        android:textOff="@string/Tuesday"
+        android:textOn="@string/Tuesday"
+        android:layout_weight="1" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/W"
+        android:textOff="@string/Wednesday"
+        android:textOn="@string/Wednesday"
+        android:layout_weight="1" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/Th"
+        android:textOff="@string/Thursday"
+        android:textOn="@string/Thursday"
+        android:layout_weight="1" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/F"
+            android:textOff="@string/Friday"
+            android:textOn="@string/Friday"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sa"
+            android:textOff="@string/Saturday"
+            android:textOn="@string/Saturday"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ripWeek"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/rip_sett"
+        android:id="@+id/chkboxText"
+        android:layout_toLeftOf="@+id/ripWeek"
+        android:layout_alignBaseline="@+id/ripWeek"
+        android:textColor="#000000"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="false"
+        android:textSize="19dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5px"
+        android:background="#000000"
+        android:id="@+id/line"
+        android:layout_below="@+id/ripWeek"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_title"
+        android:id="@+id/setOptions"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op1"
+        android:text="@string/op1"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/setOptions"
+        android:layout_marginTop="13dp"
+        android:layout_alignLeft="@+id/setOptions" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mode"
+        android:id="@+id/ringMode"
+        android:background="@drawable/edit_rect"
+        android:textColor="#35b6e5"
+        android:layout_alignRight="@+id/ripWeek"
+        android:layout_alignEnd="@+id/ripWeek"
+        android:textSize="19dp"
+        android:layout_alignBaseline="@+id/op1"
+        android:padding="3dp"
+        android:elevation="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op2"
+        android:text="@string/op2"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/op1"
+        android:layout_alignLeft="@+id/setOptions" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp2"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="19dp"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignEnd="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op2"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op3"
+        android:text="@string/op3"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/op2"
+        android:layout_marginTop="13dp"
+        android:layout_alignLeft="@+id/setOptions" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp3"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="19dp"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignEnd="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op3"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op4"
+        android:text="@string/op4"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/op7"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/setOptions" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarOp4"
+        android:layout_toRightOf="@+id/op4"
+        android:layout_toEndOf="@+id/op4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBottom="@+id/op4"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op5"
+        android:text="@string/op5"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/op4"
+        android:layout_marginTop="13dp"
+        android:layout_alignLeft="@+id/setOptions" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp5"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="19dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op5"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op6"
+        android:text="@string/op6"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/op5"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignLeft="@+id/setOptions"
+        android:layout_marginTop="13dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp6"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op7"
+        android:text="@string/op7"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/op3"
+        android:layout_alignLeft="@+id/setOptions"
+        android:layout_marginTop="13dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp7"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op8"
+        android:text="@string/op8"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/op6"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignLeft="@+id/setOptions"
+        android:layout_marginTop="13dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp8"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op9"
+        android:text="@string/op9"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/op8"
+        android:layout_alignLeft="@+id/setOptions"
+        android:layout_marginTop="13dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp9"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignRight="@+id/ringMode"
+        android:layout_alignBaseline="@+id/op9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/op10"
+        android:text="@string/op10"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/op9"
+        android:layout_alignLeft="@+id/setOptions"
+        android:layout_marginTop="13dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchOp10"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBaseline="@+id/op10"
+        android:layout_alignRight="@+id/ringMode" />
+
+</RelativeLayout>
+</ScrollView>

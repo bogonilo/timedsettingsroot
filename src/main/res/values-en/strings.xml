@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timed Settings Plus (ROOT)</string>
+    <string name="Friday">F</string>
+    <string name="Monday">M</string>
+    <string name="Saturday">S</string>
+    <string name="Sunday">S</string>
+    <string name="TStitle">TSname</string>
+    <string name="Thursday">T</string>
+    <string name="Tuesday">T</string>
+    <string name="Wednesday">W</string>
+    <string name="butt_del">Delete</string>
+    <string name="butt_save">Save</string>
+    <string name="hint_name">Insert Name</string>
+    <string name="mode">Mode</string>
+    <string name="op1">Ringer Mode:</string>
+    <string name="op4">Brightness:</string>
+    <string name="op5">Auto-Sync:</string>
+    <string name="options_title">SET OPTIONS:</string>
+    <string name="rip_sett">Weekly Repetition:</string>
+    <string name="time">SET TIME:</string>
+    <string name="time_start">Start:</string>
+    <string name="title_activity_activity_details_ts">Set TS</string>
+    <string name="title_activity_set_options">set_options</string>
+    <string name="choose_mode">Choose Ringer Mode:</string>
+    <string name="id0">Silent Mode</string>
+    <string name="id1">Vibration Mode</string>
+    <string name="id2">Normal Mode</string>
+    <string name="del_conf">Please Confirm:</string>
+    <string name="del_q">Delete TS?</string>
+    <string name="canc">Cancel</string>
+    <string name="conf">Ok</string>
+
+    <string-array name="ringer_mode">
+        <item>Silent Mode</item>
+        <item>Vibration Mode</item>
+        <item>Normal Mode</item>
+    </string-array>
+    <string name="Mon">MONDAY</string>
+    <string name="Fri">FRIDAY</string>
+    <string name="Sat">SATURDAY</string>
+    <string name="Sun">SUNDAY</string>
+    <string name="Thu">THURSDAY</string>
+    <string name="Tue">TUESDAY</string>
+    <string name="Wed">WEDNESDAY</string>
+    <string name="op6">Screen Rotation:</string>
+    <string name="op7">Automatic Brightness:</string>
+    <string name="op8">Mobile Data:</string>
+    <string name="op9">Power Save:</string>
+    <string name="enab_sett">Enable Timed Settings Plus</string>
+    <string name="op10">Airplane Mode:</string>
+</resources>
